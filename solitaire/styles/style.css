@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    background-color: #008a2c
+}
+
+.game {
+    max-width: 1200px;
+    border: 1px solid red;
+    margin: auto;
+    padding: .2rem;
+    display: grid;
+}
+
+.foundation-hand-area {
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+}
+
+.foundation-piles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 3/4;
+}
+
+.tableau {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.column {
+    padding: .2rem;
+}
